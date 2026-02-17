@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,11 +58,6 @@
             margin-bottom: 2rem;
         }
 
-        .highlight-box p {
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
         h2 {
             font-size: 1.25rem;
             font-weight: 700;
@@ -95,10 +91,6 @@
             font-size: 0.95rem;
         }
 
-        li strong {
-            color: var(--on-surface);
-        }
-
         .promise-box {
             background: var(--surface);
             border: 2px solid var(--success);
@@ -110,38 +102,6 @@
         .promise-box h3 {
             color: var(--success);
             margin-top: 0;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .promise-box h3::before {
-            content: '✓';
-            font-weight: bold;
-        }
-
-        .promise-box ul {
-            margin-bottom: 0;
-        }
-
-        .contact-section {
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background: var(--surface);
-            border-radius: 16px;
-            border: 1px solid var(--outline);
-        }
-
-        .contact-section h2 {
-            margin-top: 0;
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-
-        .contact-section a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 600;
         }
 
         .section-card {
@@ -152,17 +112,36 @@
             border: 1px solid var(--outline);
         }
 
-        .section-card h3 {
-            margin-top: 0;
+        .contact-section {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: var(--surface);
+            border-radius: 16px;
+            border: 1px solid var(--outline);
+        }
+
+        .contact-section a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .highlight-box p {
+            color: #FFFFFF !important;
+            opacity: 1 !important;
+            font-weight: 500;
         }
     </style>
 </head>
+
 <body>
     <h1>Privacy Policy</h1>
     <p class="last-updated">Last updated: February 2026</p>
 
     <div class="highlight-box">
-        <p>At SplitEven, we believe your personal information belongs to you. We've built our app with privacy as a core principle, collecting only what's necessary to provide you with a great bill-splitting experience.</p>
+        <p>At SplitEven, we believe your personal information belongs to you. We’ve designed our app to be simple and
+            transparent, collecting only the information needed to help you split bills effortlessly with your friends.
+        </p>
     </div>
 
     <h2>Information We Collect</h2>
@@ -170,68 +149,76 @@
     <div class="section-card">
         <h3>Information You Provide</h3>
         <ul>
-            <li><strong>Friend Names:</strong> When you add friends to split bills with, we store their names on your device so you can easily select them for future splits.</li>
-            <li><strong>Receipt Data:</strong> When you scan a receipt, the item names, prices, and totals are extracted and stored on your device to calculate the split.</li>
-            <li><strong>Support Communications:</strong> If you contact us for support, we keep records of our conversations to help resolve your issues.</li>
+            <li><strong>Friend Names:</strong> When you add friends to a split, we save their names so you can find them
+                easily next time.</li>
+            <li><strong>Receipt Photos:</strong> When you scan a receipt, the image is sent to our secure servers to
+                allow our AI to read the items and prices for you.</li>
+            <li><strong>Contact Info:</strong> If you send us a message through our Support Center, we keep a record of
+                your email to help solve your issue.</li>
         </ul>
     </div>
 
     <div class="section-card">
         <h3>Information Collected Automatically</h3>
         <ul>
-            <li><strong>Usage Data:</strong> We collect basic information about how you use the app (like which features you use most) to help us improve SplitEven. This data is anonymous.</li>
-            <li><strong>Device Information:</strong> We may collect general device information (like device type and operating system) to ensure the app works properly.</li>
-            <li><strong>Crash Reports:</strong> If the app crashes, we receive anonymous error reports to help us fix bugs.</li>
+            <li><strong>Unique ID:</strong> We use a secure, anonymous ID (via Firebase) to keep your receipt history
+                organized just for you.</li>
+            <li><strong>Usage Data:</strong> We look at basic, anonymous info (like which buttons are clicked most) to
+                help make the app better.</li>
+            <li><strong>Crash Reports:</strong> If the app stops working, we get a technical report so we can fix the
+                bug.</li>
         </ul>
     </div>
 
     <h2>How We Use Your Information</h2>
-    <p>We use the information we collect to:</p>
+    <p>We use your data to make bill splitting fast and fair:</p>
     <ul>
-        <li>Provide the bill-splitting features you use</li>
-        <li>Remember your friends for easier future splits</li>
-        <li>Improve the app based on how people use it</li>
-        <li>Fix bugs and technical issues</li>
-        <li>Respond to your support requests</li>
+        <li>To turn your receipt photos into an itemized list using our AI.</li>
+        <li>To show you your past split history when you use the app.</li>
+        <li>To calculate the exact tax and tip for each person in your group.</li>
     </ul>
 
     <div class="promise-box">
         <h3>Our Privacy Promise</h3>
         <p>We will never:</p>
         <ul>
-            <li>Sell your personal information to anyone</li>
-            <li>Store your receipt images on our servers</li>
-            <li>Share your data with advertisers</li>
-            <li>Track your location</li>
-            <li>Read your messages when you share splits</li>
+            <li>Sell your personal information to anyone.</li>
+            <li>Share your private receipts with other people.</li>
+            <li>Read your private messages when you share a split summary.</li>
+            <li>Track your physical location.</li>
         </ul>
     </div>
 
-    <h2>Data Storage</h2>
-    <p>Most of your data (including your friends list and split history) is stored locally on your device, not on our servers. This means:</p>
+    <h2>Advertising</h2>
+    <p>To keep the core features of SplitEven free for everyone, we show ads using Google AdMob. You may see two types
+        of ads:</p>
     <ul>
-        <li>Your data stays with you and under your control</li>
-        <li>If you delete the app, your local data is deleted too</li>
-        <li>You can clear your data anytime from the app settings</li>
+        <li><strong>Interstitial Ads:</strong> Full-screen ads that appear occasionally after a split is completed to
+            avoid interrupting your workflow.</li>
+        <li><strong>Rewarded Ads:</strong> Optional ads you can choose to watch to earn extra receipt scans.</li>
+    </ul>
+    <p>These ad services may use an anonymous ID from your device to show you relevant ads, but SplitEven does not share
+        your specific receipt data or friend lists with advertisers.</p>
+
+    <h2>Data Storage & Security</h2>
+    <p>We take your data security seriously:</p>
+    <ul>
+        <li><strong>Cloud Sync:</strong> Your history is tied to a secure ID on your phone. However, if you uninstall
+            the app, this history will be deleted and cannot be recovered.</li>
+        <li><strong>Server Processing:</strong> While receipt images are sent to our server to be read by AI, they are
+            not shared with third parties for marketing.</li>
     </ul>
 
-    <h2>Third-Party Services</h2>
-    <p>SplitEven may use trusted third-party services to help provide certain features. These services have their own privacy policies. We only work with services that meet our privacy standards.</p>
-
-    <h2>Children's Privacy</h2>
-    <p>SplitEven is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent and believe your child has provided us with personal information, please contact us.</p>
-
     <h2>Your Rights</h2>
-    <p>You have the right to:</p>
+    <p>You are in control of your data. You can:</p>
     <ul>
-        <li>Access the personal information we have about you</li>
-        <li>Request deletion of your data</li>
-        <li>Opt out of analytics collection (in app settings)</li>
-        <li>Contact us with privacy questions or concerns</li>
+        <li>You can clear your local app data at any time through your phone settings to reset your anonymous ID.</li>
+        <li>Contact us if you have questions about how your data is handled.</li>
     </ul>
 
     <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. When we make significant changes, we'll notify you through the app. We encourage you to review this policy periodically.</p>
+    <p>We may update this Privacy Policy from time to time. When we make significant changes, we'll notify you through
+        the app. We encourage you to review this policy periodically.</p>
 
     <div class="contact-section">
         <h2>Contact Us</h2>
@@ -240,4 +227,5 @@
         <p>We take your privacy seriously and will respond to your inquiries promptly.</p>
     </div>
 </body>
+
 </html>
